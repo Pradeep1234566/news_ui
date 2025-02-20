@@ -7,10 +7,50 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        backgroundColor: Colors.blue[900],
+        title: Column(
           children: [
-            const Text('News App'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Icon(
+                  Icons.menu,
+                  color: Colors.white,
+                ),
+                const Text('Pradeep News',
+                    style: TextStyle(fontSize: 24, color: Colors.white)),
+                Icon(
+                  Icons.notifications,
+                  color: Colors.white,
+                ),
+              ],
+            ),
+            // const SizedBox(height: 10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Politics',
+                      style: TextStyle(color: Colors.white)),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Sports',
+                      style: TextStyle(color: Colors.white)),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Movies',
+                      style: TextStyle(color: Colors.white)),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Technology',
+                      style: TextStyle(color: Colors.white)),
+                ),
+              ],
+            )
           ],
         ),
       ),
