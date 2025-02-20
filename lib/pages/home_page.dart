@@ -6,6 +6,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text('News App'),
+          ],
+        ),
+      ),
       backgroundColor: Colors.blue[900],
     );
   }
