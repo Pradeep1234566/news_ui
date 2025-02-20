@@ -9,7 +9,9 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue[900],
         title: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
+            SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -25,36 +27,33 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            // const SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                TextButton(
-                  onPressed: () {},
-                  child: const Text('Politics',
-                      style: TextStyle(color: Colors.white)),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text('Sports',
-                      style: TextStyle(color: Colors.white)),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text('Movies',
-                      style: TextStyle(color: Colors.white)),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text('Technology',
-                      style: TextStyle(color: Colors.white)),
-                ),
-              ],
-            )
           ],
         ),
       ),
       backgroundColor: Colors.blue[900],
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          TextButton(
+            onPressed: () {},
+            child:
+                const Text('Politics', style: TextStyle(color: Colors.white)),
+          ),
+          TextButton(
+            onPressed: () {},
+            child: const Text('Sports', style: TextStyle(color: Colors.white)),
+          ),
+          TextButton(
+            onPressed: () {},
+            child: const Text('Movies', style: TextStyle(color: Colors.white)),
+          ),
+          TextButton(
+            onPressed: () {},
+            child:
+                const Text('Technology', style: TextStyle(color: Colors.white)),
+          ),
+        ],
+      ),
     );
   }
 }
